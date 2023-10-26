@@ -40,6 +40,9 @@ WebMock.disable_net_connect!(:allow_localhost => true, :allow => "citestcycle-in
 
 Datadog.configure do |c|
   c.service = "openstreetmap"
+
+  c.instrument :pg
+
   c.ci.enabled = true
   c.ci.instrument :minitest
 end
