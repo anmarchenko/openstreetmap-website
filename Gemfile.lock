@@ -1,4 +1,16 @@
 GIT
+  remote: https://github.com/DataDog/dd-trace-rb.git
+  revision: 423c12328f03f06fdc2dc265d604041e8cc7ebfc
+  ref: 1.x-stable
+  specs:
+    ddtrace (1.15.0)
+      datadog-ci (~> 0.3.0)
+      debase-ruby_core_source (= 3.2.2)
+      libdatadog (~> 5.0.0.1.0)
+      libddwaf (~> 1.14.0.0.0)
+      msgpack
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem.git
   revision: fde1edff90d9219bbef48ecc6a65f13835269bcd
   ref: fde1edff90d9219bbef48ecc6a65f13835269bcd
@@ -173,7 +185,10 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    datadog-ci (0.3.0)
+      msgpack
     date (3.3.3)
+    debase-ruby_core_source (3.2.2)
     debug_inspector (1.1.0)
     deep_merge (1.2.2)
     delayed_job (4.1.11)
@@ -310,6 +325,9 @@ GEM
     kramdown (2.4.0)
       rexml
     language_server-protocol (3.17.0.3)
+    libdatadog (5.0.0.1.0)
+    libddwaf (1.14.0.0.0)
+      ffi (~> 1.0)
     libxml-ruby (4.1.1)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -602,6 +620,7 @@ DEPENDENCIES
   connection_pool
   dalli
   dartsass-sprockets
+  ddtrace!
   debug_inspector
   delayed_job_active_record
   doorkeeper

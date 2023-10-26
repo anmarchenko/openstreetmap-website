@@ -164,6 +164,9 @@ group :test do
   gem "simplecov", :require => false
   gem "simplecov-lcov", :require => false
   gem "webmock"
+
+  # tracing tests with datadog
+  gem "ddtrace", github: "DataDog/dd-trace-rb", ref: "1.x-stable"
 end
 
 group :development, :test do
