@@ -1,6 +1,9 @@
 require "simplecov"
 require "simplecov-lcov"
 
+require "datadog/ci"
+require "ddtrace/auto_instrument"
+
 # Fix incompatibility of simplecov-lcov with older versions of simplecov that are not expresses in its gemspec.
 # https://github.com/fortissimo1997/simplecov-lcov/pull/25
 unless SimpleCov.respond_to?(:branch_coverage)
@@ -34,6 +37,12 @@ require "rails/test_help"
 require "webmock/minitest"
 
 WebMock.disable_net_connect!(:allow_localhost => true)
+
+Datadog.configure do |c|
+  c.service = "openstreetmap"
+  c.ci.enabled = true
+  c.ci.instrument :minitest
+end
 
 module ActiveSupport
   class TestCase
