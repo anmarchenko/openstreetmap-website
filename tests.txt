@@ -1,0 +1,5 @@
+docker compose run --rm web bundle exec rails test:all
+
+1541 runs, 963430 assertions, 0 failures, 247 errors, 0 skips
+1541 runs, 969151 assertions, 0 failures, 12 errors, 0 skips
+1541 runs, 969151 assertions, 0 failures, 12 errors, 0 skips

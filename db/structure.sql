@@ -109,7 +109,6 @@ CREATE TYPE public.user_status_enum AS ENUM (
 
 SET default_tablespace = '';
 
-SET default_table_access_method = heap;
 
 --
 -- Name: acls; Type: TABLE; Schema: public; Owner: -
