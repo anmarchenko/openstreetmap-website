@@ -166,7 +166,7 @@ group :test do
   gem "webmock"
 
   # tracing tests with datadog
-  gem "ddtrace", github: "DataDog/dd-trace-rb", ref: "1.x-stable"
+  gem "ddtrace", github: "DataDog/dd-trace-rb", ref: "master"
 end
 
 group :development, :test do
