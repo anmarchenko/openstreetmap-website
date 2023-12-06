@@ -8,7 +8,6 @@ services:
       PIDFILE: /tmp/pids/server.pid
     volumes:
       - .:/app
-      - ../datadog-ci-rb:/app/vendor/datadog-ci-rb
       # Prevent these directories from mounting so they're not shared between host OS and Docker
       - /app/node_modules/
       # Mount a tmp directory that will persist between runs
