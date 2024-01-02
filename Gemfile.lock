@@ -1,11 +1,19 @@
 GIT
+  remote: https://github.com/DataDog/datadog-ci-rb.git
+  revision: 1c278b7bf4a0f98221bec63c0950297e9a57c934
+  ref: anmarchenko/minitest_tslv_instrumentation
+  specs:
+    datadog-ci (0.5.1)
+      msgpack
+
+GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: b4c90195e744fea7e9fd05e9fc7b321e90a03abd
+  revision: 909ae6214ab7b2b1539be37b9e23cb31204f6189
   ref: master
   specs:
-    ddtrace (1.17.0)
-      datadog-ci (~> 0.4.0)
-      debase-ruby_core_source (= 3.2.2)
+    ddtrace (1.18.0)
+      datadog-ci (~> 0.5.0)
+      debase-ruby_core_source (= 3.2.3)
       libdatadog (~> 5.0.0.1.0)
       libddwaf (~> 1.14.0.0.0)
       msgpack
@@ -185,10 +193,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    datadog-ci (0.4.1)
-      msgpack
     date (3.3.3)
-    debase-ruby_core_source (3.2.2)
+    debase-ruby_core_source (3.2.3)
     debug_inspector (1.1.0)
     deep_merge (1.2.2)
     delayed_job (4.1.11)
@@ -620,6 +626,7 @@ DEPENDENCIES
   connection_pool
   dalli
   dartsass-sprockets
+  datadog-ci!
   ddtrace!
   debug_inspector
   delayed_job_active_record
