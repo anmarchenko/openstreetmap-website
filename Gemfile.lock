@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DataDog/datadog-ci-rb.git
-  revision: 1c278b7bf4a0f98221bec63c0950297e9a57c934
+  revision: 452b59df7e8f6d188c9696de6347e4b6f8281fdc
   ref: anmarchenko/minitest_tslv_instrumentation
   specs:
     datadog-ci (0.5.1)
