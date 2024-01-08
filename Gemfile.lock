@@ -1,18 +1,18 @@
 GIT
   remote: https://github.com/DataDog/datadog-ci-rb.git
-  revision: 452b59df7e8f6d188c9696de6347e4b6f8281fdc
-  ref: anmarchenko/minitest_tslv_instrumentation
+  revision: 15d853c169e8ccc2ddab175cb3e6160de76dc86d
+  ref: anmarchenko/codeowners
   specs:
-    datadog-ci (0.5.1)
+    datadog-ci (0.6.0)
       msgpack
 
 GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: 909ae6214ab7b2b1539be37b9e23cb31204f6189
+  revision: c91bc1f7f6babcb7fcb00793b043566b21c13417
   ref: master
   specs:
     ddtrace (1.18.0)
-      datadog-ci (~> 0.5.0)
+      datadog-ci (~> 0.6.0)
       debase-ruby_core_source (= 3.2.3)
       libdatadog (~> 5.0.0.1.0)
       libddwaf (~> 1.14.0.0.0)
