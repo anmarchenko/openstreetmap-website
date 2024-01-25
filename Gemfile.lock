@@ -1,19 +1,19 @@
 GIT
   remote: https://github.com/DataDog/datadog-ci-rb.git
-  revision: 15d853c169e8ccc2ddab175cb3e6160de76dc86d
-  ref: anmarchenko/codeowners
+  revision: 9acd580a204cdd6d5566ae58c40a807de0fefcb0
+  ref: main
   specs:
     datadog-ci (0.6.0)
       msgpack
 
 GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: c91bc1f7f6babcb7fcb00793b043566b21c13417
+  revision: 9add3ebb5ed9d055682a5d1ce6772949c74f05a7
   ref: master
   specs:
-    ddtrace (1.18.0)
+    ddtrace (1.19.0)
       datadog-ci (~> 0.6.0)
-      debase-ruby_core_source (= 3.2.3)
+      debase-ruby_core_source (= 3.3.1)
       libdatadog (~> 5.0.0.1.0)
       libddwaf (~> 1.14.0.0.0)
       msgpack
@@ -194,7 +194,7 @@ GEM
       sprockets-rails
       tilt
     date (3.3.3)
-    debase-ruby_core_source (3.2.3)
+    debase-ruby_core_source (3.3.1)
     debug_inspector (1.1.0)
     deep_merge (1.2.2)
     delayed_job (4.1.11)
