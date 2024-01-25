@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DataDog/datadog-ci-rb.git
-  revision: d255285645846f277bc49f9bc4675305134183e8
-  ref: anmarchenko/fix_rails_test_runner
+  revision: 054512f0979d6a57760c58d49603ccdac1b2c443
+  ref: main
   specs:
     datadog-ci (0.6.0)
       msgpack

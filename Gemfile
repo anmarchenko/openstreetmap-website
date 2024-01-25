@@ -167,7 +167,7 @@ group :test do
 
   # tracing tests with datadog
   gem "ddtrace", github: "DataDog/dd-trace-rb", ref: "master"
-  gem "datadog-ci", github: "DataDog/datadog-ci-rb", ref: "anmarchenko/fix_rails_test_runner"
+  gem "datadog-ci", github: "DataDog/datadog-ci-rb", ref: "main"
 end
 
 group :development, :test do
