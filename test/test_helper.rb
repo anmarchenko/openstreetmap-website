@@ -42,7 +42,6 @@ Datadog.configure do |c|
   c.service = "openstreetmap"
 
   c.ci.enabled = true
-  c.ci.experimental_test_suite_level_visibility_enabled = true
   c.ci.instrument :minitest
 
   c.tracing.instrument :pg
