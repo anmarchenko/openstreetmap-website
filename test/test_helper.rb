@@ -2,7 +2,7 @@ require "simplecov"
 require "simplecov-lcov"
 
 require "datadog/ci"
-require "ddtrace/auto_instrument"
+require "datadog/auto_instrument"
 
 # Fix incompatibility of simplecov-lcov with older versions of simplecov that are not expresses in its gemspec.
 # https://github.com/fortissimo1997/simplecov-lcov/pull/25

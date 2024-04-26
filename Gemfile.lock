@@ -1,20 +1,20 @@
 GIT
   remote: https://github.com/DataDog/datadog-ci-rb.git
-  revision: 054512f0979d6a57760c58d49603ccdac1b2c443
+  revision: 4534437a9fd62953507c82631d4578d35a225134
   ref: main
   specs:
-    datadog-ci (0.6.0)
+    datadog-ci (1.0.0.beta2)
+      datadog (~> 2.0.0.beta2)
       msgpack
 
 GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: 9add3ebb5ed9d055682a5d1ce6772949c74f05a7
+  revision: ccdc38a85ca2d3e9d84a9ed6ab75e58111362258
   ref: master
   specs:
-    ddtrace (1.19.0)
-      datadog-ci (~> 0.6.0)
+    datadog (2.0.0.beta2)
       debase-ruby_core_source (= 3.3.1)
-      libdatadog (~> 5.0.0.1.0)
+      libdatadog (~> 7.0.0.1.0)
       libddwaf (~> 1.14.0.0.0)
       msgpack
 
@@ -331,7 +331,7 @@ GEM
     kramdown (2.4.0)
       rexml
     language_server-protocol (3.17.0.3)
-    libdatadog (5.0.0.1.0)
+    libdatadog (7.0.0.1.0)
     libddwaf (1.14.0.0.0)
       ffi (~> 1.0)
     libxml-ruby (4.1.1)
@@ -626,8 +626,8 @@ DEPENDENCIES
   connection_pool
   dalli
   dartsass-sprockets
+  datadog!
   datadog-ci!
-  ddtrace!
   debug_inspector
   delayed_job_active_record
   doorkeeper
