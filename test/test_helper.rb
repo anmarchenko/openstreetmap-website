@@ -36,7 +36,7 @@ require_relative "../config/environment"
 require "rails/test_help"
 require "webmock/minitest"
 
-WebMock.disable_net_connect!(:allow_localhost => true, :allow => "citestcycle-intake.datadoghq.eu")
+WebMock.disable_net_connect!(:allow_localhost => true, :allow => [/datadoghq/, /datad0g/])
 
 Datadog.configure do |c|
   c.service = "openstreetmap"
