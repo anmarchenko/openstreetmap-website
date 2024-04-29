@@ -43,6 +43,7 @@ Datadog.configure do |c|
 
   c.ci.enabled = true
   c.ci.instrument :minitest
+  c.ci.itr_enabled = true
 
   c.tracing.instrument :pg
 end
