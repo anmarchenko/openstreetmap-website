@@ -17,6 +17,7 @@ class GuestAbilityTest < AbilityTest
 
   test "diary permissions for a guest" do
     ability = Ability.new nil
+    # example change
     [:index, :rss, :show, :comments].each do |action|
       assert ability.can?(action, DiaryEntry), "should be able to #{action} DiaryEntries"
     end
