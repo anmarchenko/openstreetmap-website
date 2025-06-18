@@ -1,21 +1,23 @@
 GIT
   remote: https://github.com/DataDog/datadog-ci-rb.git
-  revision: 4534437a9fd62953507c82631d4578d35a225134
+  revision: 150045887fbb382dd88ce14b2e0595b18d95609e
   ref: main
   specs:
-    datadog-ci (1.0.0.beta2)
-      datadog (~> 2.0.0.beta2)
+    datadog-ci (1.19.0)
+      datadog (~> 2.4)
+      drb
       msgpack
 
 GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: ccdc38a85ca2d3e9d84a9ed6ab75e58111362258
+  revision: 54a7359a2c8504ca9248673a5209c1ac631b7c0e
   ref: master
   specs:
-    datadog (2.0.0.beta2)
-      debase-ruby_core_source (= 3.3.1)
-      libdatadog (~> 7.0.0.1.0)
-      libddwaf (~> 1.14.0.0.0)
+    datadog (2.17.0)
+      datadog-ruby_core_source (~> 3.4, >= 3.4.1)
+      libdatadog (~> 18.1.0.1.0)
+      libddwaf (~> 1.22.0.0.2)
+      logger
       msgpack
 
 GIT
@@ -193,8 +195,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    datadog-ruby_core_source (3.4.1)
     date (3.3.3)
-    debase-ruby_core_source (3.3.1)
     debug_inspector (1.1.0)
     deep_merge (1.2.2)
     delayed_job (4.1.11)
@@ -264,7 +266,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.16.3)
+    ffi (1.17.2)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -331,13 +333,14 @@ GEM
     kramdown (2.4.0)
       rexml
     language_server-protocol (3.17.0.3)
-    libdatadog (7.0.0.1.0)
-    libddwaf (1.14.0.0.0)
+    libdatadog (18.1.0.1.0)
+    libddwaf (1.22.0.0.2)
       ffi (~> 1.0)
     libxml-ruby (4.1.1)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     logstasher (2.1.5)
       activesupport (>= 5.2)
       request_store
@@ -356,7 +359,7 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
     minitest (5.20.0)
-    msgpack (1.7.2)
+    msgpack (1.8.0)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     mutex_m (0.1.2)
